@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|c:\\users\\gabriel\\desktop\\funcionarioscrud\\funcionariocrud\\viewmodels\\funcionariosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|solutionrelative:funcionariocrud\\viewmodels\\funcionariosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|c:\\users\\gabriel\\desktop\\funcionarioscrud\\funcionariocrud\\views\\funcionariospage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|solutionrelative:funcionariocrud\\views\\funcionariospage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|c:\\users\\gabriel\\desktop\\funcionarioscrud\\funcionariocrud\\views\\funcionariospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|solutionrelative:funcionariocrud\\views\\funcionariospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|c:\\users\\gabriel\\desktop\\funcionarioscrud\\funcionariocrud\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|solutionrelative:funcionariocrud\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|c:\\users\\gabriel\\desktop\\funcionarioscrud\\funcionariocrud\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7BFF78FD-9114-4A25-B3DB-37A52DC24B2F}|FuncionarioCRUD\\FuncionarioCRUD.csproj|solutionrelative:funcionariocrud\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FuncionariosPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\Views\\FuncionariosPage.xaml.cs",
+              "RelativeDocumentMoniker": "FuncionarioCRUD\\Views\\FuncionariosPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\Views\\FuncionariosPage.xaml.cs",
+              "RelativeToolTip": "FuncionarioCRUD\\Views\\FuncionariosPage.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:44:29.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FuncionariosViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\ViewModels\\FuncionariosViewModel.cs",
+              "RelativeDocumentMoniker": "FuncionarioCRUD\\ViewModels\\FuncionariosViewModel.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\ViewModels\\FuncionariosViewModel.cs",
+              "RelativeToolTip": "FuncionarioCRUD\\ViewModels\\FuncionariosViewModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowBAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:28:44.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\Models\\Funcionario.cs",
+              "RelativeDocumentMoniker": "FuncionarioCRUD\\Models\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\Models\\Funcionario.cs",
+              "RelativeToolTip": "FuncionarioCRUD\\Models\\Funcionario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:21:02.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FuncionariosPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\Views\\FuncionariosPage.xaml",
+              "RelativeDocumentMoniker": "FuncionarioCRUD\\Views\\FuncionariosPage.xaml",
+              "ToolTip": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\Views\\FuncionariosPage.xaml",
+              "RelativeToolTip": "FuncionarioCRUD\\Views\\FuncionariosPage.xaml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAowGEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-23T02:17:21.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\App.xaml",
+              "RelativeDocumentMoniker": "FuncionarioCRUD\\App.xaml",
+              "ToolTip": "C:\\Users\\Gabriel\\Desktop\\FuncionariosCRUD\\FuncionarioCRUD\\App.xaml",
+              "RelativeToolTip": "FuncionarioCRUD\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-23T02:09:24.354Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FuncionarioCRUD.Views.FuncionariosPage"
+             xmlns:viewmodels="clr-namespace:FuncionarioCRUD.ViewModels"
+             Title="Gerenciamento de Funcionários">
+
+    <ContentPage.BindingContext>
+        <viewmodels:FuncionarioViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="20">
+
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" Color="{StaticResource Primary}" />
+
+            <Frame BorderColor="{StaticResource Gray200}" CornerRadius="10" Padding="15" Margin="0,10,0,10">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Dados do Funcionário" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
+
+                    <Entry Placeholder="Nome do Funcionário"
+                           Text="{Binding NovoNome}"
+                           ClearButtonVisibility="WhileEditing" />
+
+                    <Entry Placeholder="Senha"
+                           Text="{Binding NovaSenha}"
+                           IsPassword="True"
+                           ClearButtonVisibility="WhileEditing" />
+
+                    <Button Text="Adicionar Novo Funcionário"
+                            Command="{Binding AddFuncionarioCommand}"
+                            HorizontalOptions="Fill"
+                            Style="{StaticResource PrimaryActionButtonStyle}" />
+
+                    <BoxView HeightRequest="1" Color="{StaticResource Gray300}" Margin="0,10,0,0" />
+
+                    <VerticalStackLayout IsVisible="{Binding SelectedFuncionario, Converter={StaticResource IsNotNullConverter}}" Spacing="10" Margin="0,10,0,0">
+                        <Label Text="Editando Funcionário Selecionado" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Entry Placeholder="ID (apenas leitura)"
+                               Text="{Binding SelectedFuncionario.Id}"
+                               IsReadOnly="True"
+                               BackgroundColor="{StaticResource Gray100}"/>
+
+                        <Entry Placeholder="Novo Nome"
+                               Text="{Binding SelectedFuncionario.Nome}"
+                               ClearButtonVisibility="WhileEditing"/>
+
+                        <Entry Placeholder="Nova Senha"
+                               Text="{Binding SelectedFuncionario.Senha}"
+                               IsPassword="True"
+                               ClearButtonVisibility="WhileEditing"/>
+
+                        <Grid ColumnDefinitions="*,*">
+                            <Button Grid.Column="0" Text="Atualizar Selecionado"
+                                Command="{Binding UpdateFuncionarioCommand}"
+                                Style="{StaticResource SecondaryActionButtonStyle}" />
+                            <Button Grid.Column="1" Text="Limpar Seleção"
+                                    Command="{Binding ClearSelectionCommand}" Style="{StaticResource NeutralActionButtonStyle}" />
+                        </Grid>
+
+                        <Button Text="Deletar Selecionado"
+                            Command="{Binding DeleteFuncionarioCommand}"
+                            Style="{StaticResource DestructiveActionButtonStyle}"
+                            Margin="0,5,0,0" />
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Label Text="Lista de Funcionários" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,0"/>
+
+            <CollectionView ItemsSource="{Binding Funcionarios}"
+                SelectionMode="Single"
+                SelectedItem="{Binding SelectedFuncionario}"
+                EmptyView="Nenhum funcionário cadastrado. Adicione um novo!">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="{StaticResource Gray200}" CornerRadius="5" Padding="10" Margin="0,5,0,5" HasShadow="True">
+                            <Grid ColumnDefinitions="*,Auto,Auto">
+                                <VerticalStackLayout Grid.Column="0">
+                                    <Label Text="{Binding Nome}" FontAttributes="Bold" FontSize="Medium" TextColor="White" />
+                                    <Label Text="{Binding Senha}" FontAttributes="Italic" TextColor="LightGray" />
+                                    <Label Text="{Binding Id, StringFormat='ID: {0}'}" FontSize="Small" TextColor="Silver" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+            <Button Text="Recarregar Funcionários"
+                    Command="{Binding LoadFuncionariosCommand}"
+                    HorizontalOptions="Fill"
+                    Margin="0,10,0,0"
+                    Style="{StaticResource PrimaryActionButtonStyle}"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

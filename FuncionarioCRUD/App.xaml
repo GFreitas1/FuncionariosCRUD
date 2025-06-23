@@ -1,0 +1,43 @@
+﻿<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:FuncionarioCRUD.Converters" x:Class="FuncionarioCRUD.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <converters:IsNotNullConverter x:Key="IsNotNullConverter" />
+
+            <Style TargetType="Button" x:Key="PrimaryActionButtonStyle">
+                <Setter Property="BackgroundColor" Value="#673AB7" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="Padding" Value="10,15" />
+            </Style>
+            <Style TargetType="Button" x:Key="SecondaryActionButtonStyle">
+                <Setter Property="BackgroundColor" Value="#9C27B0" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="Padding" Value="10,15" />
+            </Style>
+            <Style TargetType="Button" x:Key="NeutralActionButtonStyle">
+                <Setter Property="BackgroundColor" Value="#E0E0E0" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="Padding" Value="10,15" />
+            </Style>
+            <Style TargetType="Button" x:Key="DestructiveActionButtonStyle">
+                <Setter Property="BackgroundColor" Value="#D32F2F" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="Padding" Value="10,15" />
+            </Style>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
